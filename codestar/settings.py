@@ -30,7 +30,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'ulm&quf#)h3glpy71$$99h92$drw%b4s!&=lpbq&1wc(rj&t(6'
 
 # SECURITY WARNING: don't run with debug turned on in production!, True changed to False before the final deployment Always!!!
-DEBUG = True
+DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
