@@ -29,8 +29,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'ulm&quf#)h3glpy71$$99h92$drw%b4s!&=lpbq&1wc(rj&t(6'
 
-# SECURITY WARNING: don't run with debug turned on in production!,
-DEBUG = True
+# SECURITY WARNING: don't run with debug turned on in production!, True changed to False before the final deployment Always!!!
+DEBUG = False
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['codestarp4.herokuapp.com', 'localhost']
 
