@@ -12,11 +12,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 from pathlib import Path
-import dj_database_url
 from django.contrib.messages import constants as messages
+import dj_database_url
 if os.path.isfile("env.py"):
     import env
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,14 +26,14 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ulm&quf#)h3glpy71$$99h92$drw%b4s!&=lpbq&1wc(rj&t(6'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
-# SECURITY WARNING: don't run with debug turned on in production!, True changed to False before the final deployment Always!!!
+# SECURITY WARNING: don't run with debug turned on in production!, DEBUG Sets to at False before the final deployment
 DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['codestarp4.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['codestar.herokuapp.com', 'localhost']
 
 
 # Application definition
