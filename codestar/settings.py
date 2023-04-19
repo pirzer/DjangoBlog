@@ -34,7 +34,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['codestar.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['codestarp4.herokuapp.com/', 'localhost']
 
 
 # Application definition
